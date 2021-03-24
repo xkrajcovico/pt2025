@@ -1,0 +1,239 @@
+<!doctype html>
+<html style="scroll-behavior: smooth" class="overflow-x-hidden">
+    <head>
+        <!-- ... -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/57c79debf9.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <body class="font-raleway font-light">
+        <script>
+            AOS.init();
+          </script>
+        <!-- OZNAM 
+        
+        <div id="oznam" class="p-1 bg-green-800 cursor-pointer">
+            <p onclick="f2()" class="text-gray-200 text-center">cookies, suhlasis?</p>
+        </div>
+        -->
+        <!-- HEADER -->
+        <header class="flex flex-col bg-overlay bg-no-repeat bg-cover bg-center bg-fixed h-screen90">
+                <!-- NAV -->
+            <nav class="bg-gray-600  shadow-lg w-full absolute left-1/2 transform -translate-x-1/2">
+                <ul class="flex flex-row md:hidden">
+                    <li class="px-3 py-3 bg-yellow-400 hover:bg-gray-200 text-gray-100 hover:text-gray-600 cursor-pointer"><a href="#">Domov</a></li>
+                    <li class="flex-grow"></li>
+                    <li onclick="myFunction()" class="flex flex-row-reverse px-4 py-3 bg-gray-600 hover:bg-gray-200 text-gray-100 hover:text-gray-600 cursor-pointer md:hidden"><a href="#">☰</a></li>
+                </ul>
+                <ul id="navig" class="hidden md:flex flex-col flex-nowrap md:flex-row">
+                    <li class="hidden px-3 py-3 bg-yellow-400 hover:bg-gray-200 text-gray-600 cursor-pointer md:flex"><a href="#">Domov</a></li>
+                    <li class="navitem"><a href="#info">Info</a></li>
+                    <li class="navitem"><a href="#prihlasovanie">Prihlasovanie</a></li>
+                    <li class="navitem"><a href="#contact">Kontakt</a></li>
+                    <li class="navitem"><a href="#gallery">Galéria</a></li>
+                    <li class="navitem"><a href="#iHra">Internetová Hra</a></li>
+                </ul>
+            </nav>
+            
+            <!-- HEADING -->
+            <div id="hero" class="mx-auto my-auto content-center w-full md:max-w-2xl p-4">
+                <h1 class="h1 text-gray-100">Tintinove dobrodružstvá</h1>
+                <h2 class="h2 text-gray-100">Pridedinský tábor 2021</h2>
+            </div>
+        </header>
+            <!-- BOTTOM HEADER -->
+        <section class="bg-yellow-400 p-4 lg:px-48 grid gap-8">
+            <!-- <h3 class="h3 text-gray-100 font-normal text-center pt-1 hidden lg:block">Prihláste sa tu:</h3> -->
+            <a href="#prihlasovanie" class="bg-red-500 md:mx-24 lg:mx-52 rounded-sm font-bold text-xl text-gray-100 text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-red-400 uppercase">
+                Prihlasovanie
+            </a>
+
+        </section>
+            <!-- INFO -->
+        <section id="info" class="grid grid-cols-1 md:grid-cols-5 sectionPreset gap-8 md:px-12">
+            <div class="text-center md:pb-10 md:text-right md:col-span-3">
+                <!--
+                <div class="md:pr-4 pb-4">
+                    <h3 class="h3 text-gray-700">Tintinove dobrodružstvá</h3>
+                    <h4 class="h4">Pridedinsky tábor 2021</h4>
+                </div>
+                -->
+                <img class="w-full rounded-md" src="img/tino-1.png" alt="plagat">
+            </div>
+            <div class="text-justify mt-2 md:col-span-2"><p>Ahoj! 
+                <br><br>
+                Tento rok sa aj spolu s Tebou presunieme do dávnej doby Rimanov, Galov a čarodejov. Do doby, kde jedna dedina ukázala svoju súdržnosť, do doby, kde priateľstvo zvíťazilo, do doby neodlúčiteľnej dvojice, Asterixa a Obelixa.
+                <br>
+                13. ročník pridedinského tábora ti prinesie 9 dní... Pozor... 9 DNÍÍÍ!!! Plných skutočnej radosti, priateľstiev a nadupaných hier. Samozrejme, že nebude chýbať náš kňaz, salezián Janko.
+                <br><br>
+                Kamarát, tešíme sa na Teba!
+                <br><br>
+                Tvoji animátori</p>
+            </div>
+        </section>
+            <!-- PRIHLASOVANIE -->
+        <section id="prihlasovanie" class="bg-gray-800 grid grid-cols-1 md:grid-cols-2 sectionPreset gap-8">
+            <div class="text-center">
+                <h3 class="text-gray-100 h3">Prihlasovanie</h3>
+                <h4 class="text-gray-100 h4">Prihlasovanie sa ešte nezačalo 😪</h4>
+                <h4 class="text-gray-100 h4">Spustené bude až v apríli</h4>
+                <!--
+                <h4 class="h4 text-gray-100 text-left px-6">Tuto budu datumy</h4>
+                <h4 class="h4 text-gray-100 text-left px-6">Tuto budu datumy</h4>
+                <h4 class="h4 text-gray-100 text-left px-6">Tuto budu datumy</h4>
+                <h4 class="h4 text-gray-100 text-left px-6">Tuto budu datumy</h4>
+                <h4 class="h4 text-gray-100 text-left px-6">Tuto budu datumy</h4>
+                <iframe class="max-h-72 max-w-full overflow-y-auto" src="https://docs.google.com/forms/d/e/1FAIpQLSdtnwBsFzLsxxnV09Ak0-QYvDt3lzr8G-2xjgtypydXtXW5JQ/viewform?embedded=true" width="640" height="1536" frameborder="0" marginheight="0" marginwidth="0">Načítava sa…</iframe>
+                    -->
+            </div>
+            <div>
+                <img class="w-full rounded-md" src="img/header_image1.jpg" alt="prihlasovanie">
+            </div>
+
+        </section>
+            <!-- KONTAKT -->
+        <section id="contact" class="sectionPreset grid grid-cols-1 xl:grid-cols-2 gap-8">
+            <h3 class="xl:col-span-2 h3 text-center">Kontakt</h3>
+            <div class="grid md:grid-cols-5 bg-red-400 p-4 rounded-md">
+                <h3 class="h3 text-center font-normal text-gray-100 md:col-span-5">Vedúci tábora</h3>
+                <img src="img/Janka2.jpg" alt="kontakt-janka" class="object-cover h-48 w-48 rounded-full md:col-span-2 mx-auto">
+                <div class="my-auto md:col-span-3">
+                    <h4 class="text-gray-100 font-thin text-lg py-3">Meno: <strong>Janka Gubániová</strong></h4>
+                    <h4 class="text-gray-100 font-thin text-lg py-3">tel.: <strong>+421 944 485 158</strong></h4>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-5 bg-blue-400 p-4 rounded-md">
+                <h3 class="h3 text-center font-normal text-gray-100 md:col-span-5">Prihlasovanie</h3>
+                <img src="img/Martina.jpg" alt="kontakt-janka" class="object-cover h-48 w-48 rounded-full md:col-span-2 mx-auto">
+                <div class="my-auto md:col-span-3">
+                    <h4 class="text-gray-100 font-thin text-lg py-3">Meno: <strong>Martinka Komorná</strong></h4>
+                    <h4 class="text-gray-100 font-thin text-lg py-3">Email: <strong>pridedinskytabor2021@gmail.com</strong></h4>
+                    <h4 class="text-gray-100 font-thin text-lg py-3">tel.: <strong>+421 944 149 298</strong></h4>
+                </div>
+            </div>
+        </section>
+            <!-- GALERIA -->
+        <section id="gallery" class="sectionPreset bg-gray-800 grid md:grid-cols-2 gap-8">
+            <img src="img/galeria.jpg" alt="galeria-image"  class="w-full rounded-md">
+            <div>
+                <h3 class="h3 text-gray-100 text-center">Galéria</h3>
+                <h4 class="h4 text-gray-100 text-center p-4">Galéria bude dostupná počas tábora</h4>
+                <!--
+                <div class="grid grid-cols-1 gap-4">
+                    <a class="h4 p-2 font-normal text-center bg-yellow-400 hover:bg-yellow-500 rounded-md uppercase" href="https://photos.app.goo.gl/wbN4Zf6EpENzZRGr6">Album z prveho dna</a>
+                    <a class="h4 p-2 font-normal text-center bg-yellow-400 hover:bg-yellow-500 rounded-md uppercase" href="https://photos.app.goo.gl/wbN4Zf6EpENzZRGr6">Album z druheho dna</a>
+                    <a class="h4 p-2 font-normal text-center bg-yellow-400 hover:bg-yellow-500 rounded-md uppercase" href="https://photos.app.goo.gl/wbN4Zf6EpENzZRGr6">Album z tretieho dna</a>
+                </div>
+                    -->
+            </div>
+
+        </section>
+            <!-- INTERNETOVA HRA -->
+        <section id="iHra" class="sectionPreset grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="h3 text-center">Internetová Hra</h3>
+                <h4 class="h4 text-center p-4">Internetová hra bude dostupná počas tábora</h4>
+                <!--
+                <h4 class="h4"><strong>Den 1.</strong> Toto je otazka na prvy den</h4>
+                -->
+            </div>
+            <img src="img/internetovaHra.jpg" alt="internetova-gra-image" class="w-full rounded-md">
+
+        </section>
+<!-- 
+        <section class="min-h-screen bg-gray-600">
+            <div class="grid grid-cols-3 h-64 border-4 border-red-500 gap-4 mx-4 py-4">
+                <div class="bg-green-500 rounded-md p-4 text-center col-span-2"><h2 class="text-gray-100 text-2xl">2</h1></div>
+                <div class="bg-green-500 rounded-md p-4 text-center"><h2 class="text-gray-100 text-2xl">1</h1></div>
+
+                <div class="bg-green-500 rounded-md p-4 text-center col-start-2 col-end-4"><h2 class="text-gray-100 text-2xl">1</h1></div>
+                <div class="bg-green-500 rounded-md p-4 text-center row-span-2 justify-self-end"><h2 class="text-gray-100 text-2xl">1</h1></div>
+                <div class="bg-green-500 rounded-md p-4 text-center row-start-2 row-end-4"><h2 class="text-gray-100 text-2xl">1</h1></div>
+                <div class="bg-green-500 rounded-md p-4 text-center"><h2 class="text-gray-100 text-2xl">1</h1></div>
+                <div class="bg-green-500 rounded-md p-4 text-center"><h2 class="text-gray-100 text-2xl">1</h1></div>
+            </div>
+        </section>
+         ... 
+        <section class="flex items-center justify-center bg-gradient-to-tr from-blue-200 to-green-200 min-h-screen p-4">
+                <div class=" h-3/4 w-2/3 p-4 rounded-md absolute" style="background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));"></div>
+                <div class=" h-1/6 w-1/6 p-4 rounded-md absolute top-4 right-3" style="background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));"></div>
+                <div class=" h-1/6 w-1/6 p-4 rounded-md absolute bottom-2 left-3" style="background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));"></div>
+
+        </section> 
+        <section class="min-h-screen bg-blue-500 p-4">
+            <div class="h-48 flex flex-wrap content-center bg-green-600 rounded-xl">
+                <div class="bg-red-400 rounded-md p-4 text-center m-auto"><h2 class="text-gray-100 text-2xl">2</h1></div>
+            </div>
+            <div class="flex h-72 content-center bg-purple-600 p-10 m-4">
+                <div class="border-3 bg-gradient-to-r from-green-500 to-blue-400 p-6 h-52 w-52 rounded-3xl absolute transform rotate-12">
+                    <div class="relative bg-blue-100 -m-6 h-52 w-52 transform -rotate-12 rounded-3xl">
+                        <h1 class="text-2xl p-20 h-full text-gray-900 text-center align-text-bottom">Hello</h1>
+                    </div>
+                </div>
+                <div class="border-3 bg-gradient-to-r from-green-500 to-blue-400 p-6 h-52 w-52 rounded-3xl absolute transform rotate-12">
+                    <div class="relative bg-blue-100 -m-6 h-52 w-52 transform -rotate-12 rounded-3xl">
+                        <h1 class="text-2xl p-20 h-full text-gray-900 text-center align-text-bottom">Hello</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="box-border md:box-content h-32 w-32 border-4 m-4 p-4 bg-pink-300">
+                <h1 class="text-xl font-mono font-extralight">Toto je nadpis</h1>
+            </div>
+        </section>
+    -->
+            <!-- TOP FOOTER -->
+        <section id="footer" class="bg-overlay bg-no-repeat bg-cover bg-center bg-fixed sectionPreset text-center">
+            <h3 class="text-center text-gray-100 uppercase h3">Tešíme sa na vás</h3>
+            <h4 class="text-center text-gray-100 h4 uppercase pb-8">Vidíme sa 10. - 18. 7. 2021</h4>
+                <a href="#prihlasovanie" class="bg-red-500 rounded-sm font-bold text-xl text-gray-100 text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-red-400 uppercase">
+                    Prihlasovanie
+                </a>
+        </section>
+            <!-- FOOTER -->
+        <footer class="sectionPreset ">
+            <ul class="flex flex-row justify-center">
+                <li>
+                    <a href="https://www.facebook.com/kaplna.mladych/?ref=br_rs" target="_blank" class="fab fa-facebook-square text-gray-400 hover:text-gray-600 text-5xl m-4 transition duration-200 ease-in-out"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/kaplna_mladych/?hl=cs" target="_blank" class="fab fa-instagram-square text-gray-400 hover:text-gray-600 text-5xl m-4 transition duration-200 ease-in-out"></a>
+                </li>
+            </ul>
+            <ul class="flex flex-row justify-center mt-10">
+                <li>
+                    <div class="py-2">
+                        <p class="text-gray-400 hover:text-gray-600 transition duration-200 ease-in-out text-md">© Kaplna Mladých</a>
+                    </div>
+                </li>
+                <li>
+                    <div class=" border-l-2 ml-6 pl-6 py-2">
+                        <a href="https://www.facebook.com/hradskypalo/" target="_blank" class="text-gray-400 hover:text-gray-600 transition duration-200 ease-in-out text-md">© Pavol Hradsky</a>
+                    </div>
+                </li>
+            </ul>
+        </footer>
+            <!-- SCRIPTS -->
+        <script>
+            function myFunction(){
+                var x = document.getElementById("navig");
+                if(x.className === "hidden md:flex flex-col flex-nowrap md:flex-row "){
+                    x.className = "md:flex flex-col flex-nowrap md:flex-row ";
+                }else{
+                    x.className = "hidden md:flex flex-col flex-nowrap md:flex-row ";
+                }
+            }
+            function f2(){
+                var x = document.getElementById("oznam");
+                x.className = "hidden";
+            }
+        </script>
+    </body>
+</html>
+  
