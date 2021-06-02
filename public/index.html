@@ -54,6 +54,16 @@
                     <h2 class="h2 text-gray-100">Pridedinský tábor 2021</h2>
                 </div>
             </header>
+
+                <!-- INFORMACIE -->
+                <section id="informacie" class="bg-gray-800 grid grid-cols-1 sectionPreset gap-8 pt-5 pb-7">
+                    <div class="text-center" id="informacieJson">
+                        <template v-for="(text, index) in data.informacie" :key="index">
+                            <p :class="[{'text-yellow-300 font-medium': text.type == 'h5'}, text.type, {'pb-4': text.type == 'h3'}]" class="text-gray-100 text-center px-6"  v-html="text.text"></p>
+                        </template>
+                    </div>
+                </section>
+            
                 <!-- BOTTOM HEADER -->
             <section class="bg-yellow-400 p-4 lg:px-48 grid gap-8">
                 <!-- <h3 class="h3 text-gray-100 font-normal text-center pt-1 hidden lg:block">Prihláste sa tu:</h3> -->
@@ -78,15 +88,17 @@
                 </div>
             </section>
                 <!-- PRIHLASOVANIE -->
-            <section id="prihlasovanie" class="bg-gray-800 grid grid-cols-1 md:grid-cols-5 sectionPreset gap-8">
-                <div class="text-center md:col-span-3" id="prihlasovanieJson">
+            <section id="prihlasovanie" class="bg-gray-800 grid grid-cols-1 sectionPreset gap-8">
+                <div class="text-center" id="prihlasovanieJson">
                     <h3 class="text-gray-100 h3 pb-5">Prihlasovanie</h3>
-                    <h4 v-for="(text, index) in data.prihlasovanie" :key="index" :class="text.type" class="text-gray-100 text-left px-6">{{ text.text }}</h4>
+                    <template v-for="(text, index) in data.prihlasovanie" :key="index">
+                        <p :class="[{'text-yellow-300 font-medium': text.type == 'h5'}, text.type]" class="text-gray-100 text-center px-6"  v-html="text.text"></p>
+                    </template>
                 </div>
-                <div class="md:col-span-2">
+                <!-- <div class="md:col-span-2">
                     <img class="w-full rounded-md" src="img/header_image1.jpg" alt="prihlasovanie">
-                </div>
-                <div class="md:col-span-5">
+                </div> -->
+                <div class="">
                     <iframe v-if='data.prihlasovanieFormular != ""' class=" max-h-96 max-w-full overflow-y-auto" :src="data.prihlasovanieFormular" width="100%" height="1536" frameborder="0" marginheight="0" marginwidth="0">Načítava sa…</iframe>
                 </div>
 
@@ -106,7 +118,7 @@
                     <h3 class="h3 text-center font-normal text-gray-100 md:col-span-5">Prihlasovanie</h3>
                     <img src="img/Martina.jpg" alt="kontakt-janka" class="object-cover h-48 w-48 rounded-full md:col-span-2 mx-auto">
                     <div class="my-auto md:col-span-3">
-                        <h4 class="text-gray-100 font-thin text-lg py-3">Meno: <strong>Martinka Komorná</strong></h4>
+                        <h4 class="text-gray-100 font-thin text-lg py-3">Meno: <strong>Martina Komorná</strong></h4>
                         <h4 class="text-gray-100 font-thin text-lg py-3">Email: <strong>pridedinskytabor2021@gmail.com</strong></h4>
                         <h4 class="text-gray-100 font-thin text-lg py-3">tel.: <strong>+421 944 149 298</strong></h4>
                     </div>
@@ -195,7 +207,8 @@
                             }],
                             iHra: [""],
                             prihlasovanieFormular: "",
-                        }
+                        },
+                        yes: true,
                     }
                 },
                 methods: {
