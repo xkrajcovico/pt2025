@@ -32,42 +32,49 @@
             <!-- HEADER -->
             <header class="flex flex-col bg-overlay bg-no-repeat bg-cover bg-center bg-fixed h-screen90">
                 <!-- NAV -->
-                <nav class="bg-gray-600  shadow-lg w-full absolute left-1/2 transform -translate-x-1/2">
+                <nav class="bg-shrek-dark-brown-1 shadow-lg w-full absolute left-1/2 transform -translate-x-1/2">
                     <ul class="flex flex-row md:hidden">
-                        <li class="px-3 py-3 bg-yellow-400 hover:bg-gray-200 text-gray-100 hover:text-gray-600 cursor-pointer"><a href="#">Domov</a></li>
+                        <li class="px-3 py-3 bg-yellow-400 hover:bg-gray-200 text-gray-100 hover:text-gray-600 cursor-pointer">
+                            <a href="https://kaplna.domka.sk"class="font-bold">Domov</a>
+                        </li>
                         <li class="flex-grow"></li>
-                        <li v-on:click="myFunction()" class="flex flex-row-reverse px-4 py-3 bg-gray-600 hover:bg-gray-200 text-gray-100 hover:text-gray-600 cursor-pointer md:hidden"><a href="#">☰</a></li>
+                        <li v-on:click="myFunction()" class="flex flex-row-reverse px-4 py-3 bg-gray-600 hover:bg-gray-200 text-gray-100 hover:text-gray-600 cursor-pointer md:hidden">
+                            <a href="https://kaplna.domka.sk"class="font-bold">☰</a>
+                        </li>
                     </ul>
                     <ul id="navig" class="hidden md:flex flex-col flex-nowrap md:flex-row">
-                        <li class="hidden px-3 py-3 bg-yellow-400 hover:bg-gray-200 text-gray-600 cursor-pointer md:flex"><a href="#">Domov</a></li>
-                        <li class="navitem"><a href="#info">Info</a></li>
-                        <li class="navitem"><a href="#prihlasovanie">Prihlasovanie</a></li>
-                        <li class="navitem"><a href="#contact">Kontakt</a></li>
-                        <li class="navitem"><a href="#gallery">Galéria</a></li>
-                        <li class="navitem"><a href="#iHra">Internetová Hra</a></li>
+                        <li class="hidden px-3 py-3 bg-shrek-light-green-1 hover:bg-gray-200 text-gray-600 cursor-pointer md:flex">
+                            <a href="https://kaplna.domka.sk"class="font-bold">Domov</a>
+                        </li>
+                        <li class="navitem bg-shrek-dark-brown-1"><a href="#info">Info</a></li>
+                        <li class="navitem bg-shrek-dark-brown-1"><a href="#prihlasovanie">Prihlasovanie</a></li>
+                        <li class="navitem bg-shrek-dark-brown-1"><a href="#contact">Kontakt</a></li>
+                        <li class="navitem bg-shrek-dark-brown-1"><a href="#gallery">Galéria</a></li>
+                        <li class="navitem bg-shrek-dark-brown-1"><a href="#iHra">Internetová Hra</a></li>
                     </ul>
                 </nav>
-                
+
                 <!-- HEADING -->
                 <div id="hero" class="mx-auto my-auto content-center w-full md:max-w-2xl p-4">
-                    <h1 class="h1 text-gray-100">Tintinove dobrodružstvá</h1>
-                    <h2 class="h2 text-gray-100">Pridedinský tábor 2021</h2>
+                    <h1 class="h1 text-gray-100">Shrek</h1>
+                    <h2 class="h2 text-gray-100">Pridedinský tábor 2025</h2>
                 </div>
             </header>
 
+
                 <!-- INFORMACIE -->
-                <section id="informacie" class="bg-gray-800 grid grid-cols-1 sectionPreset gap-8 pt-5 pb-7">
+                <!-- <section id="informacie" class="bg-shrek-dark-brown-1 grid grid-cols-1 sectionPreset gap-8 pt-5 pb-7">
                     <div class="text-center" id="informacieJson">
                         <template v-for="(text, index) in data.informacie" :key="index">
                             <p :class="[{'text-yellow-300 font-medium': text.type == 'h5'}, text.type, {'pb-4': text.type == 'h3'}]" class="text-gray-100 text-center px-6"  v-html="text.text"></p>
                         </template>
                     </div>
-                </section>
+                </section> -->
             
                 <!-- BOTTOM HEADER -->
-            <section class="bg-yellow-400 p-4 lg:px-48 grid gap-8">
+            <section class="bg-shrek-dark-brown-1 p-4 lg:px-48 grid gap-8">
                 <!-- <h3 class="h3 text-gray-100 font-normal text-center pt-1 hidden lg:block">Prihláste sa tu:</h3> -->
-                <a href="#prihlasovanie" class="bg-red-500 md:mx-24 lg:mx-52 rounded-sm font-bold text-xl text-gray-100 text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-red-400 uppercase">
+                <a href="#prihlasovanie" class="bg-shrek-dark-green-1 md:mx-24 lg:mx-52 rounded-sm font-bold text-xl text-gray-100 text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-red-400 uppercase">
                     Prihlasovanie
                 </a>
 
@@ -75,22 +82,24 @@
                 <!-- INFO -->
             <section id="info" class="grid grid-cols-1 md:grid-cols-5 sectionPreset gap-8 md:px-12">
                 <div class="text-center md:pb-10 md:text-right md:col-span-3">
-                    <img class="w-full rounded-md" src="img/tino-1.png" alt="plagat">
+                    <img class="w-full rounded-md" src="img/plagat.png" alt="plagat">
                 </div>
                 <div class="text-justify mt-2 md:col-span-2">
                     <p>Ahoj!</p>
                     <br><br>
-                    <p>Tento rok budeme spolu s reportérom Tintinom, jeho psím spoločníkom Filutom a starým morským vlkom Kapitánom skúmať záhadu rodu Haddockov. 
-                        Spoločne sa preplavíme cez more, poletíme lietadlom a preskúmame aj vzdialenú púšť.</p>
-                    <p>16. Ročník tábora ti prinesie 9 dní plných radosti, priateľstiev a parádnych hier!</p>
+                    <p>Tento rok sa vydáme na nezabudnuteľné dobrodružstvo so Shrekom, Oslíkom a Fionou!
+                        Spolu prekabátime zlého lorda Farquaada a objavíme pravý význam priateľstva a lásky.
+                        Čakajú nás bláznivé výzvy, zábavné hry a kopec smiechu!</p>
+                    <p>20. ročník tábora ti prinesie 7 dní plných radosti, priateľstiev a parádnych hier!</p>
                     <br><br>
                     <p>Tvoji Animátori 😊</p>
                 </div>
             </section>
                 <!-- PRIHLASOVANIE -->
-            <section id="prihlasovanie" class="bg-gray-800 grid grid-cols-1 sectionPreset gap-8">
+            <section id="prihlasovanie" class="bg-shrek-dark-brown-1 grid grid-cols-1 sectionPreset gap-8">
                 <div class="text-center" id="prihlasovanieJson">
                     <h3 class="text-gray-100 h3 pb-5">Prihlasovanie</h3>
+                    <h4 class="text-gray-100 h4 pb-5">Prihlasovanie bude sprístupnené čoskoro</h4>                    
                     <template v-for="(text, index) in data.prihlasovanie" :key="index">
                         <p :class="[{'text-yellow-300 font-medium': text.type == 'h5'}, text.type]" class="text-gray-100 text-center px-6"  v-html="text.text"></p>
                     </template>
@@ -106,26 +115,26 @@
                 <!-- KONTAKT -->
             <section id="contact" class="sectionPreset grid grid-cols-1 xl:grid-cols-2 gap-8">
                 <h3 class="xl:col-span-2 h3 text-center">Kontakt</h3>
-                <div class="grid md:grid-cols-5 bg-red-400 p-4 rounded-md">
+                <div class="grid md:grid-cols-5 bg-shrek-light-green-1 p-4 rounded-md">
                     <h3 class="h3 text-center font-normal text-gray-100 md:col-span-5">Vedúci tábora</h3>
-                    <img src="img/Janka2.jpg" alt="kontakt-janka" class="object-cover h-48 w-48 rounded-full md:col-span-2 mx-auto">
+                    <img src="img/samo.jpg" alt="kontakt-samko" class="object-cover h-48 w-48 rounded-full md:col-span-2 mx-auto">
                     <div class="my-auto md:col-span-3">
-                        <h4 class="text-gray-100 font-thin text-lg py-3">Meno: <strong>Janka Gubániová</strong></h4>
-                        <h4 class="text-gray-100 font-thin text-lg py-3">tel.: <strong>+421 944 485 158</strong></h4>
+                        <h4 class="text-gray-100 font-thin text-lg py-3">Meno: <strong>Samuel Kňažko</strong></h4>
+                        <h4 class="text-gray-100 font-thin text-lg py-3">tel.: <strong>+421 911 390 885</strong></h4>
                     </div>
                 </div>
-                <div class="grid md:grid-cols-5 bg-blue-400 p-4 rounded-md">
+                <div class="grid md:grid-cols-5 bg-shrek-light-green-1 p-4 rounded-md">
                     <h3 class="h3 text-center font-normal text-gray-100 md:col-span-5">Prihlasovanie</h3>
-                    <img src="img/Martina.jpg" alt="kontakt-janka" class="object-cover h-48 w-48 rounded-full md:col-span-2 mx-auto">
+                    <img src="img/mata.jpg" alt="kontakt-mata" class="object-cover h-48 w-48 rounded-full md:col-span-2 mx-auto">
                     <div class="my-auto md:col-span-3">
                         <h4 class="text-gray-100 font-thin text-lg py-3">Meno: <strong>Martina Komorná</strong></h4>
-                        <h4 class="text-gray-100 font-thin text-lg py-3">Email: <strong>pridedinskytabor2021@gmail.com</strong></h4>
+                        <h4 class="text-gray-100 font-thin text-lg py-3">Email: <strong>pridedinskytabor2025@gmail.com</strong></h4>
                         <h4 class="text-gray-100 font-thin text-lg py-3">tel.: <strong>+421 944 149 298</strong></h4>
                     </div>
                 </div>
             </section>
                 <!-- GALERIA -->
-            <section id="gallery" class="sectionPreset bg-gray-800 grid md:grid-cols-2 gap-8">
+            <section id="gallery" class="sectionPreset bg-shrek-dark-brown-1 grid md:grid-cols-2 gap-8">
                 <img src="img/galeria.jpg" alt="galeria-image"  class="w-full rounded-md">
                 <div>
                     <h3 class="h3 text-gray-100 text-center">Galéria</h3>
@@ -162,8 +171,8 @@
                 <!-- TOP FOOTER -->
             <section id="footer" class="bg-overlay bg-no-repeat bg-cover bg-center bg-fixed sectionPreset text-center">
                 <h3 class="text-center text-gray-100 uppercase h3">Tešíme sa na vás</h3>
-                <h4 class="text-center text-gray-100 h4 uppercase pb-8">Vidíme sa 10. - 18. 7. 2021</h4>
-                    <a href="#prihlasovanie" class="bg-red-500 rounded-sm font-bold text-xl text-gray-100 text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-red-400 uppercase">
+                <h4 class="text-center text-gray-100 h4 uppercase pb-8">Vidíme sa 14. - 20. 7. 2025</h4>
+                    <a href="#prihlasovanie" class="bg-shrek-dark-brown-1 rounded-sm font-bold text-xl text-gray-100 text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-red-400 uppercase">
                         Prihlasovanie
                     </a>
             </section>
@@ -186,6 +195,11 @@
                     <li>
                         <div class=" border-l-2 ml-6 pl-6 py-2">
                             <a href="https://www.facebook.com/hradskypalo/" target="_blank" class="text-gray-400 hover:text-gray-600 transition duration-200 ease-in-out text-md">© Pavol Hradsky</a>
+                        </div>
+                    </li>             
+                    <li>
+                        <div class=" border-l-2 ml-6 pl-6 py-2">
+                            <a href="https://www.instagram.com/krajcovic.ondrej/" target="_blank" class="text-gray-400 hover:text-gray-600 transition duration-200 ease-in-out text-md">© Ondrej Krajcovic</a>
                         </div>
                     </li>
                 </ul>
@@ -225,11 +239,11 @@
                         x.className = "hidden";
                     },
                 },
-                created() {
-                    fetch('https://api.npoint.io/d0c124d72646bf7ef54f')
-                        .then(res => res.json())
-                        .then(json => this.data = json)
-                }
+                // created() {
+                //     fetch('https://api.npoint.io/d0c124d72646bf7ef54f')
+                //         .then(res => res.json())
+                //         .then(json => this.data = json)
+                // }
             }
             Vue.createApp(App).mount('#app')
         </script>
