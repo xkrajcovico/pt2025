@@ -1105,6 +1105,10 @@ video {
   background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
 }
 
+.hover\:bg-shrek-light-green-1:hover {
+  background-color: rgba(97, 127, 76, 1);
+}
+
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
