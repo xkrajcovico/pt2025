@@ -93,18 +93,37 @@
                         <br><br>
                         <p>Tvoji Animátori 😊</p>
                     </div>
-                </section>
-                <!-- PRIHLASOVANIE -->
+                </section>                <!-- PRIHLASOVANIE -->
             <section id="prihlasovanie" class="bg-shrek-dark-brown-1 grid grid-cols-1 sectionPreset gap-8">
                 <div class="text-center" id="prihlasovanieJson">
                     <h3 class="text-gray-100 h3 pb-5">Prihlasovanie</h3>
-                    <h4 class="text-gray-100 h4 pb-5">Prihlasovanie bude sprístupnené čoskoro</h4>                    
+                    <h4 class="text-gray-100 h4 pb-5">Ahojte! Prihlasovanie na pridedinský tábor bude spustené 5. mája :D </h4>                    
                     <template v-for="(text, index) in data.prihlasovanie" :key="index">
                         <p :class="[{'text-yellow-300 font-medium': text.type == 'h5'}, text.type]" class="text-gray-100 text-center px-6"  v-html="text.text"></p>
                     </template>
+                    <div class="flex justify-center items-center">
+                        <p class="text-gray-100 h4 text-center text-base">
+                            <br><br>
+                            Milí rodičia,
+                            <br><br>
+                            v rámci nášho tábora by sme radi zaviedli systém solidarity, ktorý umožní rodičom prispieť podľa svojich možností.
+                            <br>
+                            Ak si niekto nemôže dovoliť plnú sumu, môže prispieť menšou čiastkou.
+                            <br>
+                            Tí, ktorí majú možnosť zaplatiť o niečo viac ako je stanovená cena tak pomôžu tým, ktorí to potrebujú.
+                            <br>
+                            Každá pomoc nám umožní zabezpečiť, aby sa tábora mohli zúčastniť všetky deti, bez ohľadu na ich finančnú situáciu.
+                            <br>
+                            Ďakujeme Vám za Vašu podporu a pochopenie.
+                            <br><br>
+                            Váš organizačný tím
+                            <br><br>
+                        </p>
+                    </div>
                 </div>
+                <!-- Obrazok -->
                 <!-- <div class="md:col-span-2">
-                    <img class="w-full rounded-md" src="img/header_image1.jpg" alt="prihlasovanie">
+                    <img class="w-full rounded-md" src="img/prihlaso.jpg" alt="prihlasovanie">
                 </div> -->
                 <div class="">
                     <iframe v-if='data.prihlasovanieFormular != ""' class=" max-h-96 max-w-full overflow-y-auto" :src="data.prihlasovanieFormular" width="100%" height="1536" frameborder="0" marginheight="0" marginwidth="0">Načítava sa…</iframe>
