@@ -97,12 +97,16 @@
             <section id="prihlasovanie" class="bg-shrek-dark-brown-1 grid grid-cols-1 sectionPreset gap-8">
                 <div class="text-center" id="prihlasovanieJson">
                     <h3 class="text-gray-100 h3 pb-5">Prihlasovanie</h3>
-                    <h4 class="text-gray-100 h4 pb-5">Ahojte! Prihlasovanie na pridedinský tábor bude spustené 5. mája :D </h4>                    
+                    <h4 class="text-gray-100 h4 pb-5">Ahojte! Prihlasovanie na pridedinský tábor bude spustené 5. mája :D
+                        <br>
+                        (prijimame deti od 8 rokov alebo s ukoncenym 1. rocnikom)
+                        <br>
+                    </h4>                    
                     <template v-for="(text, index) in data.prihlasovanie" :key="index">
                         <p :class="[{'text-yellow-300 font-medium': text.type == 'h5'}, text.type]" class="text-gray-100 text-center px-6"  v-html="text.text"></p>
                     </template>
                     <div class="flex justify-center items-center">
-                        <p class="text-gray-100 h4 text-center text-base">
+                        <p class="text-gray-100 font-bold h4 text-center text-base">
                             <br><br>
                             Milí rodičia,
                             <br><br>
