@@ -63,13 +63,13 @@
 
 
                 <!-- INFORMACIE -->
-                <!-- <section id="informacie" class="bg-shrek-dark-brown-1 grid grid-cols-1 sectionPreset gap-8 pt-5 pb-7">
+                <section v-if="data.informacie.length" id="informacie" class="bg-shrek-dark-brown-1 grid grid-cols-1 sectionPreset gap-8 pt-5 pb-7">
                     <div class="text-center" id="informacieJson">
                         <template v-for="(text, index) in data.informacie" :key="index">
                             <p :class="[{'text-yellow-300 font-medium': text.type == 'h5'}, text.type, {'pb-4': text.type == 'h3'}]" class="text-gray-100 text-center px-6"  v-html="text.text"></p>
                         </template>
                     </div>
-                </section> -->
+                </section>
             
                 <!-- BOTTOM HEADER -->
             <section class="bg-shrek-dark-brown-1 p-4 lg:px-48 grid gap-8">
@@ -182,9 +182,9 @@
             <section id="iHra" class="sectionPreset grid md:grid-cols-2 gap-8">
                 <div id="iHraJson">
                     <h3 class="h3 text-center">Internetová Hra</h3>
-                    <h4 v-if='data.iHra[0] == ""' class="h4 text-center p-4">Internetová hra bude dostupná počas tábora</h4>
+                    <h4 v-if='data.iHra[0] == "" || !data.iHra.length' class="h4 text-center p-4">Internetová hra bude dostupná počas tábora</h4>
                     <template v-for="(den, index) in data.iHra" :key="index">
-                        <h4 v-if='den != ""' class="h4"><strong>{{ "Den " + (index + 1) + ". " }}</strong>{{ den }}</h4>
+                        <h4 v-if='den != ""' class="h4"><strong>{{ "Deň " + (index + 1) + ". " }}</strong>{{ den }}</h4>
                     </template>
 
                 </div>
@@ -233,6 +233,7 @@
                 data() {
                     return {
                         data: {
+                            informacie: [],
                             prihlasovanie: [{
                                 type: "",
                                 data: "",
@@ -241,8 +242,8 @@
                                 text: "",
                                 link: "",
                             }],
-                            iHra: [""],
-                            prihlasovanieFormular: "https://docs.google.com/forms/d/e/1FAIpQLSdYpxUAcwGkpTJ8OD3ou54WWViuLnEN8DdZBnMgjFeJBnKNAw/viewform",
+                            iHra: [],
+                            prihlasovanieFormular: "",
                         },
                         yes: true,
                     }
