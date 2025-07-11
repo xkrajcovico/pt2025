@@ -261,11 +261,11 @@
                         x.className = "hidden";
                     },
                 },
-                // created() {
-                //     fetch('https://api.npoint.io/d0c124d72646bf7ef54f')
-                //         .then(res => res.json())
-                //         .then(json => this.data = json)
-                // }
+                created() {
+                    fetch('https://api.npoint.io/d722d3bcc61ddeb8056b')
+                        .then(res => res.json())
+                        .then(json => this.data = json)
+                }
             }
             Vue.createApp(App).mount('#app')
         </script>
